@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff9f5">
+  <meta name="description" content="Lời chúc mừng ngày Phụ nữ Việt Nam 20/10.">
+  <title>[SACT LAB] Chúc mừng ngày Phụ nữ Việt Nam 20/10</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <audio id="backgroundMusic" src="music/st.mp3" autoplay loop preload="auto"></audio>
+  <main class="experience">
+    <section class="intro" id="intro" aria-label="Lời chúc ngày 20 tháng 10">
+      <div class="intro__backdrop" aria-hidden="true"></div>
+      <div class="intro-artwork">
+        <img class="intro__image" src="img/1.png" alt="">
+        <div class="intro-copy-mask" aria-hidden="true"></div>
+        <img class="intro__image intro__copy" src="img/1.png" alt="Mừng ngày Phụ nữ Việt Nam 20/10">
+      </div>
+      <div class="petals" id="petals" aria-hidden="true"></div>
+      <button class="enter-button" id="enterButton" type="button">
+        <span>Chạm để mở lời chúc</span>
+        <span class="enter-button__arrow" aria-hidden="true">↓</span>
+      </button>
+    </section>
+
+    <section class="slideshow" id="slideshow" aria-label="Những lời chúc 20 tháng 10" aria-hidden="true">
+      <div class="slideshow__backdrop" aria-hidden="true"></div>
+      <div class="slide-artwork">
+        <img class="slide-image slide-image--base" src="img/2.png" alt="" aria-hidden="true">
+        <div class="slide-text-mask" aria-hidden="true"></div>
+        <img class="slide-image slide-image--text is-active" id="slideImage" src="img/2.png" alt="Lời chúc 1 trên 12 nhân ngày Phụ nữ Việt Nam">
+        <img class="slide-image slide-image--text" id="nextSlideImage" alt="" aria-hidden="true">
+      </div>
+      <div class="petals" id="slidePetals" aria-hidden="true"></div>
+      <button class="nav-button nav-button--previous" id="previousButton" type="button" aria-label="Xem lời chúc trước">
+        <span aria-hidden="true">‹</span>
+      </button>
+      <button class="nav-button nav-button--next" id="nextButton" type="button" aria-label="Xem lời chúc tiếp theo">
+        <span aria-hidden="true">›</span>
+      </button>
+      <div class="slide-status" aria-live="polite">
+        <span id="slideCount">01 / 12</span>
+        <div class="slide-status__track" aria-hidden="true">
+          <span id="progressBar"></span>
+        </div>
+      </div>
+      <p class="keyboard-hint" aria-hidden="true">Dùng phím ← → để chuyển ảnh</p>
+    </section>
+    <button class="sound-button" id="soundButton" type="button" aria-label="Bật nhạc nền" aria-pressed="false" title="Bật nhạc nền">
+      <svg class="sound-button__icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path class="sound-button__speaker" d="M4 10v4h4l5 4V6l-5 4H4Z"></path>
+        <path class="sound-button__waves" d="M16 9a5 5 0 0 1 0 6m2.5-8.5a8.5 8.5 0 0 1 0 11"></path>
+        <path class="sound-button__mute" d="m16 9 5 6m0-6-5 6"></path>
+      </svg>
+    </button>
+  </main>
+</body>
+</html>
